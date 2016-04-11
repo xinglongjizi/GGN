@@ -1,0 +1,1015 @@
+/* 全局css --------------------------------------------------------------------------------------------- */
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #212121;
+}
+a{
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+div.clear{
+	clear: both;
+}
+
+/* index.html  -------------------------------------------------------------------------------------------*/
+/* 头部样式 --------------------------------------------------------------------------------------------- */
+.home-header{
+	background-color: #413D3D;
+	background-image: url(../../imgs/head-bg.png);
+	background-repeat: repeat;
+}
+.home-header .logo-wrapper{
+	padding: 88px 0;
+}
+.home-header .logo-wrapper img{
+	display: block;
+	margin: 0 auto;
+}
+.home-header ul.menu{
+	text-align: center;
+}
+.home-header ul.menu li{
+	display: inline-block;
+	margin: 0 8px;
+	min-width: 96px;
+}
+.home-header ul.menu li a{
+	display: block;
+	color: #fefefe;
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 14.25px;
+	text-align: center;
+	font-weight: 600;
+	border: 1px solid #fff;
+}
+.home-header ul.menu li a:hover{
+	background: #fefefe;
+	color: #413D3D;
+}
+.home-header .title-wrapper{
+	padding: 79px 0 128px 0;
+}
+.home-header .title-wrapper h2{
+	color: #fefefe;
+	text-align: center;
+	font-weight: 300;
+}
+.home-header .title-wrapper h2 span{
+	font-size: 39px;
+}
+
+/* 固定菜单样式 ----------------------------------------------------------------------------------------*/
+.fixed-menu{
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	padding: 6px 0 0 0;
+	background: #302C2C;
+	display: none;
+}
+.fixed-menu .fixed-logo{
+	display: inline-block;
+	height: 64px;
+	float: left;
+	margin-left: 112px;
+}
+.fixed-menu .fixed-logo img{
+	height: 100%;
+}
+.fixed-menu ul{
+	padding: 24px 0 20px 0;
+	float: right;
+	margin-right: 112px;
+	display: inline-block;
+}
+.fixed-menu ul.menu-icon{
+	padding: 12px 6px 0 6px;
+	display: none;
+}
+.fixed-menu ul.menu-icon i{
+	color: #fefefe;
+	font-size: 48px;
+	cursor: pointer;
+}
+.fixed-menu ul li{
+	display: inline-block;
+}
+.fixed-menu ul li a{
+	color: #fefefe;
+	display: block;
+	padding: 0 8px;
+	border: 1px solid #302C2C;
+}
+.fixed-menu ul li a:hover{
+	border-radius: 4px;
+	border: 1px solid #fefefe;
+}
+
+/* 固定展开菜单的样式 */
+.fixed-expanded-menu{
+	background: #5F6261;
+	position: fixed;
+	z-index: 98;
+	top: 56px;
+	right: 0;
+	width: 72%;
+	min-height: 100%;
+	transform-origin: 100% 50%;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in;
+}
+.fixed-expanded-menu-toggle{
+	transform: scaleX(1);
+}
+.fixed-expanded-menu ul{
+	padding: 12px 15px 0 15px;
+}
+.fixed-expanded-menu ul li{
+	border: 1px solid #fff;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	margin: 8px 0;
+}
+.fixed-expanded-menu ul li.logo-li{
+	border: none;
+	padding: 24px 0;
+}
+.fixed-expanded-menu ul li img{
+	height: 64px;
+}
+.fixed-expanded-menu ul li a{
+	display: block;
+	padding: 12px 0;
+	color: #fefefe;
+	font-size: 14.25px;
+	font-weight: 600;
+}
+.fixed-expanded-menu ul li a:hover{
+	color: #5F6261;
+	background: #fefefe;
+}
+
+/* about-section样式--------------------------------------------------------------------------------------- */
+.about-section{
+	margin-top: 64px;
+	padding: 0 100px;
+	padding-bottom: 108px;
+	position: relative;
+	background: url(../../imgs/bg-map.jpg) center center;
+	background-repeat: repeat;
+}
+.about-section h2{
+	color: #333;
+	font-size: 38px;
+	padding: 24px 0;
+}
+.about-section .col-left{
+	width: 49%;
+	float: left;
+}
+.about-section .col-left dl{
+ 	margin-bottom: 20px;
+}
+.about-section .col-left dl dt{
+	color: #9D9F91;
+	font-weight: 600;
+	cursor: pointer;
+}
+.about-section .col-left dl dt i{
+	font-size: 24px;
+	transition: transform 0.3s ease-out;
+}
+.about-section .col-left dl dd{
+	padding: 12px 0 4px 18px;
+	line-height: 1.6;
+	text-align: justify;
+	font-size: 14.25px;
+	color: #333;
+	display: none;
+}
+.about-section .col-left dl dd p{
+	padding: 4px;
+	border-top: 1px solid #ccc;
+}
+.about-section .col-left dl:nth-child(1) dd{
+	display: block;
+}
+.i-active{
+	transform: rotate(90deg);
+}
+.about-section .col-right{
+	width: 49%;
+	float: right;
+}
+.about-section .col-right video{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+.about-section .more{
+	position: absolute;
+	top: 32px;
+	right: 100px;
+}
+.about-section .more a{
+	background: #222222;
+	border-radius: 4px;
+	display: block;
+	font-weight: 600;
+	color: #fefefe;
+	text-align: center;
+	padding: 4px 8px;
+}
+.about-section .more a:hover{
+	background: #444;
+}
+
+/* blog-section 的样式--------------------------------------------------------------------------------- */
+.blog-section{
+	background: #E9E7E7;
+	padding: 96px 100px 108px 100px;
+	position: relative;
+}
+.blog-section h2{
+	color: #333;
+	font-size: 38px;
+}
+.blog-section > p{
+	color: #5E6260;
+	font-size: 14.25px;
+	font-weight: 600;
+	margin-bottom: 44px;
+}
+.blog-section .col{
+	width: 24%;
+	float: left;
+}
+.blog-section .col:nth-of-type(1),.blog-section .col:nth-of-type(2),.blog-section .col:nth-of-type(3){
+	margin-right: 1.33333333333%;
+}
+.blog-section .col .img-div{
+	overflow: hidden;
+}
+.blog-section .col .img-div img{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: transform 0.3s ease-out;
+}
+.blog-section .col .img-div img:hover{
+	transform: scale(1.08);
+}
+.blog-section .col a{
+	display: block;
+	text-align: center;
+	padding: 12px 0 8px 0;
+	color: #333;
+	font-size: 16.25px;
+}
+.blog-section .col a:hover{
+	color: #666;
+}
+.blog-section .col p{
+	text-align: center;
+	color: #666;
+	margin-bottom: 24px;
+}
+.blog-section .more{
+	position: absolute;
+	top: 104px;
+	right: 100px;
+}
+.blog-section .more a{
+	background: #222222;
+	border-radius: 4px;
+	display: block;
+	font-weight: 600;
+	color: #fefefe;
+	text-align: center;
+	padding: 4px 8px;
+}
+.blog-section .more a:hover{
+	background: #444;
+}
+
+/* events-section 的样式------------------------------------------------------------------------------ */
+.events-section{
+	background: #222222;
+	padding: 132px 100px 124px 100px;
+}
+.events-section h2{
+	color: #fff;
+	font-size: 38px;
+}
+.events-section > p{
+	color: #fff;
+	font-size: 14.25px;
+	font-weight: 600;
+	margin-bottom: 44px;
+}
+.events-section .col-left{
+	float: left;
+	width: 49%;
+}
+.events-section .lg-col .wrapper{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.events-section .lg-col .wrapper img{
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease-out;
+}
+.events-section .lg-col .wrapper:hover img{
+	transform: scale(1.08);
+}
+.events-section .lg-col .wrapper > div{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-out;
+}
+.events-section .lg-col .wrapper:hover > div{
+	top: 0;
+}
+.events-section .lg-col .wrapper > div .part-1{
+	padding: 0 50px;
+	height: 55%;
+}
+.events-section .lg-col .wrapper > div .part-1 p{
+	color: #eee;
+	font-size: 16px;
+}
+.events-section .lg-col .wrapper > div .part-1 p:nth-of-type(1){
+	padding-top: 78px;
+}
+.events-section .lg-col .wrapper > div .part-1 h3{
+	color: #fff;
+	font-size: 36px;
+	margin: 8px 0;
+}
+.events-section .lg-col .wrapper > div .part-2{
+	background: #fff;
+	padding: 24px 50px 0 50px;
+	height: 45%;
+}
+.events-section .lg-col .wrapper > div .part-2 p{
+	font-size: 14.25px;
+	color: rgb(94,98,96);
+	line-height: 1.6;
+	text-align: justify;
+}
+.events-section .lg-col .wrapper > div .part-2 a{
+	display: inline-block;
+	color: #010101;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 8px;
+}
+.events-section .col-right{
+	float: right;
+	width: 49%;
+}
+.events-section .calendar{
+	margin: 96px 0 64px 0;
+}
+.events-section .calendar > span{
+	display: inline-block;
+	margin-right: 48px;
+	font-size: 28px;
+	font-weight: 600;
+	color: #fff;
+}
+.events-section .calendar > select{
+	display: inline-block;
+	border: none;
+	width: 240px;
+	margin-right: 12px;
+	height: 30px;
+	font-size: 14.25px;
+	background-color: #9D9F90;
+	color: #fff;
+	position: relative;
+	top: -4px;
+}
+.events-section .calendar > select option{
+	padding: 6px 24px;
+	border-bottom: 1px solid #ccc;
+}
+.events-section .calendar > a{
+	display: inline-block;
+	background-color: #727272;
+	font-weight: 600;
+	color: #fff;
+	padding: 5px 0;
+	width: 56px;
+	position: relative;
+	top: -4px;
+	top: -3px \9;
+	text-align: center;
+}
+.events-section .calendar > a:hover{
+	background: #5A5A5A;
+	border-radius: 4px;
+}
+.events-section .col{
+	width: 32%;
+	float: left;
+	margin-bottom: 32px;
+}
+/*
+	给.col加一个父级.col-wrapper，且这个父级下只有.col子元素集，没有其他同等级的不同元素，
+	这样nth-of-type()中的参数才和逻辑；
+	没给.col加父级前，用的父级是.events-section，这个父级下有其他与.col同等级的其他元素...,就导致使用
+	nth-of-type()时，参数的表现很诡异...
+ */
+.events-section .col-wrapper > div.col:nth-of-type(3n+2){
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.events-section .col .img-div{
+	height: 178px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+.events-section .col .img-div img{
+	width: 100%;
+	transition: transform .3s ease-out;
+}
+.events-section .col .img-div:hover img{
+	transform: scale(1.08);
+}
+.events-section .col .img-div ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	list-style: none;
+	padding: 1px 8px;
+	background-color: #353535;
+}
+.events-section .col .img-div ul li{
+	color: #fefefe;
+	font-size: 14.25px;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px;
+}
+.events-section .col .img-div ul li:nth-of-type(2){
+	font-size: 32px;
+	border-top: 2px solid #222222;
+	border-bottom: 2px solid #222222;
+}
+.events-section .col .img-div ul li:nth-of-type(4){
+	background-color: #222;
+}
+.events-section .col .img-div ul li:nth-of-type(4) a{
+	color: #fefefe;
+	display: block;
+}
+.events-section .col .img-div ul li:nth-of-type(4):hover{
+	background-color: #666;
+}
+.events-section .col p{
+	color: #fefefe;
+	padding: 0 8px;
+}
+.events-section .col p:nth-of-type(1){
+	margin: 18px 0 8px 0;
+}
+.events-section .col p:nth-of-type(2){
+	color: #999;
+}
+.events-section > a{
+	display: inline-block;
+	text-align: center;
+	background: #666;
+	color: #fefefe;
+	padding: 8px 32px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+.events-section > a:hover{
+	background: #999;
+}
+
+/*  media-section 的样式 -------------------------------------------------------------------------------- */
+.media-section{
+	padding: 144px 100px 120px 100px;
+	position: relative;
+}
+.media-section > h2{
+	color: #333;
+	font-size: 38px;
+}
+.media-section > p{
+	color: #5E6260;
+	font-size: 14.25px;
+	font-weight: 600;
+	margin-bottom: 44px;
+}
+.media-section .row{
+	border: 2px solid #333;
+	padding: 32px 0 32px 180px;
+	margin-bottom: 12px;
+	position: relative;
+}
+.media-section .row:hover{
+	background: #eee;
+}
+.media-section .row img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-right: 2px solid #333;
+}
+.media-section .row h2{
+	font-size: 22.5px;
+	font-weight: normal;
+	color: rgb(34,34,34);
+	margin-bottom: 12px;
+}
+.media-section .row p{
+	font-size: 14.25px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.media-section .row p span{
+	font-weight: normal;
+	color: #666;
+	cursor: pointer;
+}
+.media-section .row .div-a{
+	position: absolute;
+	top: 32px;
+	right: 32px;
+}
+.media-section .row a{
+	display: inline-block;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.media-section .row a:nth-of-type(1){
+	font-size: 32px;
+	color: #A3A3A3;
+	border: 1px solid #A3A3A3;
+	padding: 0px 8px;
+}
+.media-section .row a:nth-of-type(2){
+	border: 1px solid #A3A3A3;
+	color: rgb(34,34,34);
+	font-size: 15px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 10px 18px;
+	position: relative;
+	top: -6px;
+}
+.media-section > a{
+	position: absolute;
+	top: 155px;
+	right: 100px;
+	background: #222222;
+	border-radius: 4px;
+	font-weight: 600;
+	color: #fefefe;
+	text-align: center;
+	padding: 4px 12px;
+}
+.media-section > a:hover{
+	background: #444;
+}
+
+/*  footer 的样式-------------------------------------------------------------------------------------- */
+.footer-part-1{
+	background-color: #222;
+	padding: 140px 100px 56px 100px;
+}
+.footer-part-1 .col{
+	float: left;
+	width: 32%;
+}
+.footer-part-1 .col:nth-of-type(3n+2){
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.footer-part-1 .col:nth-of-type(1) h3{
+	color: #fefefe;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+.footer-part-1 .col:nth-of-type(1) p{
+	height: 56px;
+	margin-top: 36px;
+	text-align: center;
+}
+.footer-part-1 .col:nth-of-type(1) p img{
+	height: 100%;
+	cursor: pointer;
+}
+.footer-part-1 .col:nth-of-type(1) p i{
+	font-size: 64px;
+	color: #fefefe;
+	cursor: pointer;
+}
+.footer-part-1 .col:nth-of-type(1) p i:nth-of-type(1){
+	margin: 0 12px 0 24px;
+}
+.footer-part-1 .col:nth-of-type(1) p i:nth-of-type(2){
+	margin: 0 24px 0 12px;
+}
+.footer-part-1 .col:nth-of-type(2){
+	text-align: center;
+}
+.footer-part-1 .col:nth-of-type(3) h3{
+	color: #fefefe;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+.footer-part-1 .col:nth-of-type(3) a{
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	color: #fefefe;
+	font-size: 14.25px;
+	padding: 18px 0;
+	margin-top: 36px;
+	text-align: center;
+}
+.footer-part-1 .col:nth-of-type(3) a:hover{
+	background: #666;
+	border: 2px solid #666;
+	border-radius: 40px;
+}
+.footer-part-1 > p{
+	margin: 90px 0 72px 0;
+}
+.footer-part-1 > p input{
+	display: inline-block;
+	width: 84%;
+	background: transparent;
+	border: 2px solid #fefefe;
+	height: 64px;
+	color: #fefefe;
+	font-size: 32px;
+	text-indent: 36px;
+}
+.footer-part-1 > p button{
+	display: inline-block;
+	width: 15%;
+	background: #111;
+	border: 2px solid #fefefe;
+	height: 68px;
+	color: #fefefe;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
+	top: -3px;
+	cursor: pointer;
+	transition: all .3s ease-out;
+}
+.footer-part-1 > p button:hover{
+	background: #666;
+}
+.footer-part-1 .coll{
+	float: left;
+	width: 48%;
+}
+.footer-part-1 .info .coll:nth-of-type(2){
+	margin: 0 2% 0 2%;
+}
+.footer-part-1 .coll h4{
+	color: #fefefe;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+.footer-part-1 .coll p{
+	color: #fefefe;
+	font-size: 14.25px;
+}
+.footer-part-1 .info .coll:nth-of-type(2) p a{
+	color: #666;
+}
+.footer-part-2 .img-div{
+	border-bottom: 1px solid #bbb;
+	padding: 48px 0;
+	text-align: center;
+}
+.footer-part-2 ul{
+	padding: 10px 0;
+	text-align: center;
+}
+.footer-part-2 ul li{
+	display: inline-block;
+	margin-right: 8px;
+}
+.footer-part-2 ul li a{
+	display: block;
+	color: #666;
+	font-size: 13px;
+}
+
+/* about.html ----------------------------------------------------------------------------------------- */
+
+.header-holder , .footer-holder{
+	height: 100px;
+	background: #ccc;
+}
+/* banner */
+.about-banner{
+	padding: 0 160px;
+	margin-bottom: 64px;
+}
+.about-banner img{
+	width: 100%;
+	height: auto;
+	box-shadow: 4px 4px 4px #aaa;
+}
+/* information */
+.about-info .section{
+	padding: 24px 160px;
+}
+.about-info .section h2{
+	margin-bottom: 18px;
+	font-size: 28px;
+	font-weight: normal;
+	font-style: italic;
+}
+.about-info .section h2 span{
+	display: block;
+	font-size: 24px;
+	color: #666;
+}
+.about-info .section p{
+	font-size: 17px;
+	margin-bottom: 12px;
+	line-height: 1.4;
+	text-align: justify;
+}
+.about-info .section:nth-of-type(odd){
+	background: #eee;
+	box-shadow: 4px 4px 4px #ccc;
+}
+
+/* blog list html ------------------------------------------------------------------------------------- */
+.blog-main{
+	padding: 72px 0 24px 0;
+	float: left;
+	width: 68%;
+}
+.blog-aside{
+	padding: 72px 0 24px 0;
+	float: right;
+	width: 30%;
+}
+.blog-main > h2{
+	font-size: 32px;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 48px;
+	padding: 0 90px;
+}
+.blog-main > div{
+	padding: 24px 90px;
+	margin-bottom: 32px;
+}
+.blog-main > div:nth-of-type(odd){
+	background: #eee;
+	box-shadow: 4px 4px 4px #ccc;
+}
+.blog-main > div h3{
+	font-size: 24px;
+	font-weight: normal;
+	font-style: italic;
+}
+.blog-main > div span{
+	color: #666;
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 12px;
+}
+.blog-main > div p{
+	line-height: 1.4;
+	font-size: 16.25px;
+	text-align: justify;
+}
+.blog-main .pre-next a{
+	font-size: 20px;
+}
+.blog-main .pre-next a:nth-of-type(1){
+	float: left;
+}
+.blog-main .pre-next a:nth-of-type(2){
+	float: right;
+}
+
+/* blog detail html ----------------------------------------------------------------------------------- */
+.blog-detail-main{
+	padding: 64px 75px 36px 75px;
+}
+.blog-detail-main > img{
+	display: block;
+	width: 72%;
+	height: auto;
+	box-shadow: 4px 4px 4px #999;
+}
+.blog-detail-main .left-col , .blog-detail-main .right-col{
+	/*
+	有关于使用inline-block来代替float的讨论也蛮多的，最常说的就是使用inline-block来代替float进行响应式布局
+	但是，使用inline-block的元素之间会存在“n px”的空白间距,而这个间距是无视margin: 0;的，
+	带来的坏处就是inline-block的元素们设置百分比宽度的不能满足总和等于100%，这样在布局宽度分配时就会很麻烦
+	因此还是用float吧，因为float总能满足x + y + z + k +.... + n = 100%;                                 */
+	/*display: inline-block;*/
+}
+.blog-detail-main .left-col{
+	float: left;
+	width: 72%;
+}
+.blog-detail-main .left-col > h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	font-style: italic;
+	margin: 24px 0 0 0;
+}
+.blog-detail-main .left-col > span{
+	font-size: 14px;
+	color: #666;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+.blog-detail-main .left-col > p{
+	font-size: 18px;
+	line-height: 1.6;
+	text-align: justify;
+	margin-bottom: 24px;
+}
+.blog-detail-main .left-col > a{
+	font-size: 20px;
+}
+.blog-detail-main .left-col > a:nth-of-type(1){
+	float: left;
+}
+.blog-detail-main .left-col > a:nth-of-type(2){
+	float: right;
+}
+.blog-detail-main .right-col{
+	float: right;
+	width: 26%;
+	padding: 24px 0 0 0 ;
+}
+.blog-detail-main .right-col > ul , .blog-aside ul{
+	list-style: none;
+	margin-bottom: 16px;
+}
+.blog-detail-main .right-col > ul h3 , .blog-aside > ul h3{
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 14px;
+}
+.blog-detail-main .right-col > ul li , .blog-aside > ul li{
+	font-size: 16.25px;
+	margin-bottom: 8px;
+}
+
+/* media-list.html ------------------------------------------------------------------------------------ */
+.media-list-main{
+	padding: 64px 160px 32px 160px;
+}
+.media-list-main .media-list{
+	border: 2px solid #212121;
+	padding: 32px 18px;
+	margin-bottom: 24px;
+}
+.media-list-main .media-list:hover{
+	background: #eee;
+}
+.media-list-main .media-list .left{
+	float: left;
+}
+.media-list-main .media-list .left h2{
+	font-weight: normal;
+	font-style: italic;
+}
+.media-list-main .media-list .left p{
+	font-size: 14px ;
+	color: #666;
+}
+.media-list-main .media-list .left p span{
+	font-size: 15px;
+	color: #212121;
+	font-weight: bolder;
+}
+.media-list-main .media-list .right{
+	float: right;
+}
+.media-list-main .media-list .right a{
+	display: inline-block;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.media-list-main .media-list .right a:nth-of-type(1){
+	font-size: 32px;
+	color: #A3A3A3;
+	border: 1px solid #A3A3A3;
+	padding: 0px 8px;
+}
+.media-list-main .media-list .right a:nth-of-type(2){
+	border: 1px solid #A3A3A3;
+	color: rgb(34,34,34);
+	font-size: 15px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 10px 18px;
+	position: relative;
+	top: -6px;
+}
+
+/* partners.html -------------------------------------------------------------------------------------- */
+.partners{
+	padding: 12px 140px;
+}
+.partners .main{
+	padding: 48px 20px;
+	background: #eee;
+	box-shadow: 4px 4px 4px #ccc;
+}
+.partners .main h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 24px;
+}
+.partners .main ul{
+	margin-bottom: 24px;
+}
+.partners .main ul li{
+	margin-bottom: 18px;
+	color: #333;
+}
+.partners .main ul li span{
+	font-size: 18px;
+	color: #212121;
+}
+.partners .main p{
+	color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
