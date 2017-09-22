@@ -53,6 +53,8 @@ $(function(){
 		$("html,body").animate({scrollTop: $('.footer').offset().top},700);
 	});
 
+	// aaaaaa
+
 
 
 
